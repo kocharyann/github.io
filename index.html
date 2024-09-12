@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЗ по Веб-программированию</title>
+</head>
+<body>
+
+    <!-- Список гиперссылок -->
+    <ul>
+        <!-- Абсолютные ссылки -->
+        <li><a href="http://kubsu.ru">Ссылка на главную страницу kubsu.ru (HTTP)</a></li>
+        <li><a href="https://kubsu.ru">Ссылка на главную страницу kubsu.ru (HTTPS)</a></li>
+
+        <!-- Ссылка изображение -->
+        <li><a href="https://www.example.com"><img src="https://via.placeholder.com/150" alt="Ссылка-изображение"></a></li>
+
+        <!-- Сокращенные ссылки -->
+        <li><a href="/about">Сокращенная ссылка на внутреннюю страницу</a></li>
+        <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+
+        <!-- Ссылка на фрагмент текущей страницы -->
+        <li><a href="#section1">Ссылка на фрагмент текущей страницы</a></li>
+        
+        <!-- Ссылка с тремя параметрами в URL -->
+        <li><a href="https://www.example.com/search?param1=val1&param2=val2&param3=val3">Ссылка с тремя параметрами</a></li>
+
+        <!-- Ссылка с параметром id в URL -->
+        <li><a href="https://www.example.com/item?id=123">Ссылка с параметром id</a></li>
+
+        <!-- Относительные ссылки -->
+        <li><a href="./page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li><a href="about/page.html">Относительная ссылка на страницу в каталоге about</a></li>
+        <li><a href="../page.html">Относительная ссылка на страницу уровнем выше текущего</a></li>
+        <li><a href="../../page.html">Относительная ссылка на страницу двумя уровнями выше</a></li>
+
+        <!-- Контекстная ссылка в тексте абзаца -->
+        <li><p>Это <a href="https://www.wikipedia.org">Контекстная ссылка</a> в тексте абзаца</p></li>
+
+        <!-- Ссылка на фрагмент страницы стороннего сайта -->
+        <li><a href="https://www.example.com/page#section">Ссылка на фрагмент страницы стороннего сайта</a></li>
+
+        <!-- Ссылки из областей изображения -->
+        <li>
+            <img src="https://via.placeholder.com/300x200" usemap="#imagemap" alt="Карта изображения">
+            <map name="imagemap">
+                <area shape="rect" coords="34,44,270,350" href="https://www.example.com" alt="Прямоугольная область">
+                <area shape="circle" coords="337,300,44" href="https://www.example.com" alt="Круглая область">
+            </map>
+        </li>
+
+        <!-- Ссылка с пустым href -->
+        <li><a href="">Ссылка с пустым href</a></li>
+
+        <!-- Ссылка без href -->
+        <li><a>Ссылка без href</a></li>
+
+        <!-- Ссылка, по которой запрещен переход поисковикам -->
+        <li><a href="https://www.example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковиками</a></li>
+
+        <!-- Ссылка, запрещенная для индексации -->
+        <li>
+            <meta name="robots" content="noindex">
+        </li>
+
+        <!-- Нумерованный список ссылок с подписями title -->
+        <li>
+            <ol>
+                <li><a href="https://www.example.com" title="Описание первой ссылки">Первая ссылка</a></li>
+                <li><a href="https://www.example.com" title="Описание второй ссылки">Вторая ссылка</a></li>
+            </ol>
+        </li>
+
+        <!-- Ссылка на файл на сервере FTP с авторизацией -->
+        <li><a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP</a></li>
+    </ul>
+
+    <!-- Раздел страницы для ссылки на фрагмент -->
+    <div id="section1">
+        <h2>Фрагмент страницы</h2>
+        <p>Здесь находится фрагмент страницы, на который ссылается одна из гиперссылок.</p>
+    </div>
+
+    <!-- Форма с полями -->
+    <form action="submit_form.php" method="post">
+        <label for="name">ФИО:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+        <label for="email">e-mail:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="dob">Дата рождения:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label>Пол:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">мужской</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">женский</label><br><br>
+
+        <label for="programming_languages">Любимый язык программирования:</label>
+        <select id="programming_languages" name="programming_languages" multiple>
+            <option value="pascal">Pascal</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="javascript">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="haskell">Haskell</option>
+            <option value="clojure">Clojure</option>
+            <option value="prolog">Prolog</option>
+            <option value="scala">Scala</option>
+        </select><br><br>
+
+        <label for="bio">Биография:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
+
+        <input type="checkbox" id="contract" name="contract">
+        <label for="contract">С контрактом ознакомлен (а)</label><br><br>
+
+        <input type="submit" value="Сохранить">
+    </form>
+
+</body>
+</html>
