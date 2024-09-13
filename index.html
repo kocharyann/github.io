@@ -1,78 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <meta charset="UTF-8">
     <title>ДЗ по веб-программированию</title>
 </head>
     <body>
         <h1>ДЗ по веб-программированию</h1>
-    <!-- Список гиперссылок -->
+    
     <ul>
-        <!-- Абсолютные ссылки -->
+        
         <li><a href="http://kubsu.ru">Ссылка на главную страницу kubsu.ru (HTTP)</a></li>
-        <li><a href="https://kubsu.ru">Ссылка на главную страницу kubsu.ru (HTTPS)</a></li>
+        <li><a href="https://music.yandex.ru">Ссылка на яндекс музыку (HTTPS)</a></li>
 
-        <!-- Ссылка изображение -->
-        <li><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flower_jtca001.jpg/525px-Flower_jtca001.jpg" >Ссылка-изображение</a></li>_jtca001.jpg"><img src="https://via.placeholder.com/150" alt="Ссылка-изображение"></a></li>
-
-        <!-- Сокращенные ссылки -->
-        <li><a href="/about">Сокращенная ссылка на внутреннюю страницу</a></li>
+        <li><a href="https://ru.pinterest.com/pin/641411171913804372/"><img src="https://i.pinimg.com/originals/61/ce/9c/61ce9c134159c9e480c58ca6443ed98f.jpg" height="250" width="250" alt="ссылка-изображение"></a></li> 
+        <li><a href="/inside">Сокращенная ссылка на внутреннюю страницу</a></li> 
         <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
 
-        <!-- Ссылка на фрагмент текущей страницы -->
         <li><a href="#section1">Ссылка на фрагмент текущей страницы</a></li>
         
-        <!-- Ссылка с тремя параметрами в URL -->
-        <li><a href="https://www.example.com/search?param1=val1&param2=val2&param3=val3">Ссылка с тремя параметрами</a></li>
+<li><a href="https://ru.wikipedia.org/wiki/Мальдивы?m1=a1&m2=a2&m3=a3">Ссылка с тремя параметрами в URL</a></li> 
 
-        <!-- Ссылка с параметром id в URL -->
-        <li><a href="https://www.example.com/item?id=123">Ссылка с параметром id</a></li>
 
-        <!-- Относительные ссылки -->
-        <li><a href="./page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
-        <li><a href="about/page.html">Относительная ссылка на страницу в каталоге about</a></li>
-        <li><a href="../page.html">Относительная ссылка на страницу уровнем выше текущего</a></li>
-        <li><a href="../../page.html">Относительная ссылка на страницу двумя уровнями выше</a></li>
+        
+        <li><a href="https://ru.wikipedia.org/wiki/Ереван?id=city">Ссылка с параметром id</a></li>
 
-        <!-- Контекстная ссылка в тексте абзаца -->
-        <li><p>Это <a href="https://www.wikipedia.org">Контекстная ссылка</a> в тексте абзаца</p></li>
+         <li><a href="./lalal">Относительная ссылка на страницу в текущем каталоге</a></li> 
+    <li><a href="./about/cosmos">Относительная ссылка на страницу в каталоге about</a></li> 
+    <li><a href="../star">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li> 
+    <li><a href="../../lofa">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li> 
 
-        <!-- Ссылка на фрагмент страницы стороннего сайта -->
-        <li><a href="https://www.example.com/page#section">Ссылка на фрагмент страницы стороннего сайта</a></li>
+        <li><p>Это <a href="https://ru.wikipedia.org/wiki/Картофель">Контекстная ссылка</a> в тексте абзаца</p></li>
 
-        <!-- Ссылки из областей изображения -->
-        <li>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flower_jtca001.jpg/525px-Flower_jtca001.jpg" usemap="#imagemap" alt="Карта изображения">
-            <map name="imagemap">
-                <area shape="rect" coords="34,44,270,350" href="https://www.example.com" alt="Прямоугольная область">
-                <area shape="circle" coords="337,300,44" href="https://www.example.com" alt="Круглая область">
-            </map>
-        </li>
+        
+        <li><a href="https://www.wildberries.ru/catalog/209363599/detail.aspx#fragment">Ссылка на фрагмент страницы стороннего сайта</a></li>
 
-        <!-- Ссылка с пустым href -->
-        <li><a href="">Ссылка с пустым href</a></li>
-
-        <!-- Ссылка без href -->
-        <li><a>Ссылка без href</a></li>
-
-        <!-- Ссылка, по которой запрещен переход поисковикам -->
-        <li><a href="https://www.example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковиками</a></li>
-
-        <!-- Ссылка, запрещенная для индексации -->
-        <li>
-            <meta name="robots" content="noindex">
-        </li>
-
-        <!-- Нумерованный список ссылок с подписями title -->
-        <li>
-            <ol>
-                <li><a href="https://www.example.com" title="Описание первой ссылки">Первая ссылка</a></li>
-                <li><a href="https://www.example.com" title="Описание второй ссылки">Вторая ссылка</a></li>
-            </ol>
-        </li>
-
-        <!-- Ссылка на файл на сервере FTP с авторизацией -->
-        <li><a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP</a></li>
-    </ul>
+        
+            <li>
+        <img src="https://pixel-shot.com/get_image/i-2510621-0.JPG" usemap="#map" alt="Tea and Spoon" width="300" height="200">
+        <map name="map">
+            <area shape="rect" coords="220,20,270,160" alt="ложка" href="https://www.wildberries.ru/catalog/12602357/detail.aspx">
+            <area shape="circle" coords="110,85,40" alt="чай" href="https://ru.wikipedia.org/wiki/Чайный_гриб">
+        </map>
+    </li> 
+    <li><a href="">Ссылка с пустым href</a></li> 
+    <li><a>Ссылка без href</a></li> 
+    <li><a href="https://privorot-gadalka.ru/?yclid=16280251729991172095" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li> 
+    <li><noindex><a href="https://www.roblox.com/?ysclid=m1126no5kh879604123">Запрещенная для индексации поисковиками</a></noindex></li> 
+</ul> 
+<ol> 
+    <li><a href="https://translated.turbopages.org/proxy_u/en-ru.ru.644efe14-66e4867e-d65c270a-74722d776562/https/en.wikipedia.org/wiki/Çukur" title="Сериал">Чукур</a></li> 
+    <li><a href="https://en.m.wikipedia.org/wiki/Endless_Love_(2015_TV_series)" title="Сериал">Черная любовь</a></li> 
+    <li><a href="https://translated.turbopages.org/proxy_u/en-ru.ru.8dd177c8-66e48700-16a40f94-74722d776562/https/en.wikipedia.org/wiki/Kardeşlerim" title="Сериал">Мои братья и сёстры</a></li> 
+</ol> 
+<ul> 
+    <li><a href="ftp://polina:123@https://vk.com/?ysclid=m112mr56ot896249699/info.txt">Ссылка на файл на сервере FTP с авторизацией</a></li> 
+</ul> 
 
     <!-- Раздел страницы для ссылки на фрагмент -->
     <div id="section1">
@@ -122,6 +104,6 @@
 
         <input type="submit" value="Сохранить">
     </form>
-
+<p id="here">тут текст</p> 
 </body>
 </html>
